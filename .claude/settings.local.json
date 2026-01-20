@@ -5,7 +5,9 @@
       "Bash(git remote add:*)",
       "Bash(git add:*)",
       "Bash(git branch:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(copy index.html 404.html /Y)",
+      "Bash(cmd /c copy index.html 404.html /Y)"
     ]
   }
 }
