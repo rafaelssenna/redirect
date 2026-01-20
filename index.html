@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="10;url=https://www.plametal.com.br/">
-    <title>Mudamos de Site - Redirecionando...</title>
+    <title>Mudamos de Site - Plametal</title>
     <style>
         * {
             margin: 0;
@@ -20,7 +19,7 @@
             justify-content: center;
             align-items: center;
             padding: 15px;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         body::before {
@@ -108,75 +107,22 @@
             font-weight: 600;
         }
 
-        .countdown-container {
-            margin: 25px 0;
-        }
-
-        .countdown {
-            font-size: 56px;
-            font-weight: 800;
-            background: linear-gradient(180deg, #ff6b00 0%, #ff8c00 50%, #ffa500 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: none;
-            filter: drop-shadow(0 4px 15px rgba(255, 107, 0, 0.5));
-            animation: countPulse 1s ease-in-out infinite;
-        }
-
-        @keyframes countPulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        .countdown-label {
-            color: #666;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-top: 8px;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 5px;
-            background: #1f1f1f;
-            border-radius: 3px;
-            margin: 25px 0;
-            overflow: hidden;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #ff6b00, #ff8c00, #ffa500);
-            border-radius: 3px;
-            width: 0%;
-            animation: progress 10s linear forwards;
-            box-shadow: 0 0 20px rgba(255, 107, 0, 0.6);
-        }
-
-        @keyframes progress {
-            0% { width: 0%; }
-            100% { width: 100%; }
-        }
-
         .btn {
             display: inline-block;
             background: linear-gradient(135deg, #ff6b00 0%, #ff8c00 100%);
             color: #000;
-            padding: 16px 40px;
+            padding: 18px 50px;
             text-decoration: none;
             border-radius: 50px;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 700;
-            margin-top: 8px;
+            margin-top: 25px;
             transition: all 0.3s ease;
             box-shadow: 0 8px 30px rgba(255, 107, 0, 0.35);
             text-transform: uppercase;
             letter-spacing: 1px;
             width: 100%;
-            max-width: 280px;
+            max-width: 300px;
         }
 
         .btn:hover {
@@ -223,33 +169,12 @@
             }
         }
 
-        .new-url {
-            background: rgba(255, 107, 0, 0.1);
-            padding: 10px 20px;
-            border-radius: 10px;
-            margin: 18px 0;
-            border: 1px solid rgba(255, 107, 0, 0.2);
-        }
-
-        .new-url a {
-            color: #ff8c00;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            transition: color 0.3s;
-            word-break: break-all;
-        }
-
-        .new-url a:hover {
-            color: #ffa500;
-        }
-
         .info-box {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 12px;
             padding: 20px;
-            margin: 25px 0 20px;
+            margin: 20px 0;
             text-align: left;
         }
 
@@ -288,11 +213,13 @@
         /* Mobile */
         @media (max-width: 480px) {
             body {
-                padding: 10px;
+                padding: 12px;
+                align-items: flex-start;
+                padding-top: 30px;
             }
 
             .container {
-                padding: 30px 20px;
+                padding: 30px 22px;
                 border-radius: 16px;
             }
 
@@ -317,37 +244,12 @@
                 margin-bottom: 8px;
             }
 
-            .countdown {
-                font-size: 48px;
-            }
-
-            .countdown-label {
-                font-size: 11px;
-                letter-spacing: 2px;
-            }
-
-            .countdown-container {
-                margin: 20px 0;
-            }
-
-            .progress-bar {
-                margin: 20px 0;
-                height: 4px;
-            }
-
-            .new-url {
-                padding: 10px 15px;
-                margin: 15px 0;
-            }
-
-            .new-url a {
-                font-size: 13px;
-            }
-
             .btn {
-                padding: 14px 30px;
-                font-size: 14px;
+                padding: 16px 40px;
+                font-size: 15px;
                 width: 100%;
+                max-width: none;
+                margin-top: 20px;
             }
 
             .particle {
@@ -356,31 +258,34 @@
             }
 
             .info-box {
-                padding: 15px;
-                margin: 20px 0 15px;
+                padding: 18px;
+                margin: 18px 0;
             }
 
             .info-box h2 {
-                font-size: 14px;
+                font-size: 15px;
+                margin-bottom: 10px;
             }
 
             .info-box p {
                 font-size: 13px;
+                line-height: 1.6;
             }
         }
 
         /* Muito pequeno */
         @media (max-width: 360px) {
+            body {
+                padding: 10px;
+                padding-top: 20px;
+            }
+
             .container {
-                padding: 25px 15px;
+                padding: 25px 18px;
             }
 
             h1 {
                 font-size: 20px;
-            }
-
-            .countdown {
-                font-size: 42px;
             }
 
             .icon-container {
@@ -391,6 +296,23 @@
             .icon-container svg {
                 width: 30px;
                 height: 30px;
+            }
+
+            .info-box {
+                padding: 15px;
+            }
+
+            .info-box h2 {
+                font-size: 14px;
+            }
+
+            .info-box p {
+                font-size: 12px;
+            }
+
+            .btn {
+                padding: 14px 30px;
+                font-size: 14px;
             }
         }
     </style>
@@ -426,37 +348,7 @@
             <p>Agora somos <span class="new-name">Plametal</span> — mesmo propósito, nova identidade!</p>
         </div>
 
-        <p>Você será redirecionado automaticamente.</p>
-
-        <div class="countdown-container">
-            <div class="countdown" id="countdown">10</div>
-            <div class="countdown-label">segundos</div>
-        </div>
-
-        <div class="progress-bar">
-            <div class="progress-fill"></div>
-        </div>
-
-        <div class="new-url">
-            <a href="https://www.plametal.com.br/">www.plametal.com.br</a>
-        </div>
-
-        <a href="https://www.plametal.com.br/" class="btn">Acessar Agora</a>
+        <a href="https://www.plametal.com.br/" class="btn">Acessar Novo Site</a>
     </div>
-
-    <script>
-        let seconds = 10;
-        const countdownEl = document.getElementById('countdown');
-
-        const interval = setInterval(() => {
-            seconds--;
-            countdownEl.textContent = seconds;
-
-            if (seconds <= 0) {
-                clearInterval(interval);
-                window.location.href = 'https://www.plametal.com.br/';
-            }
-        }, 1000);
-    </script>
 </body>
 </html>
