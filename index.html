@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="5;url=https://www.plametal.com.br/">
+    <meta http-equiv="refresh" content="10;url=https://www.plametal.com.br/">
     <title>Mudamos de Site - Redirecionando...</title>
     <style>
         * {
@@ -152,7 +152,7 @@
             background: linear-gradient(90deg, #ff6b00, #ff8c00, #ffa500);
             border-radius: 3px;
             width: 0%;
-            animation: progress 5s linear forwards;
+            animation: progress 10s linear forwards;
             box-shadow: 0 0 20px rgba(255, 107, 0, 0.6);
         }
 
@@ -244,6 +244,47 @@
             color: #ffa500;
         }
 
+        .info-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0 20px;
+            text-align: left;
+        }
+
+        .info-box h2 {
+            color: #ff8c00;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .info-box p {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-box strong {
+            color: #ff8c00;
+        }
+
+        .info-box .old-name {
+            color: #666;
+            text-decoration: line-through;
+        }
+
+        .info-box .new-name {
+            color: #ffa500;
+            font-weight: 600;
+        }
+
         /* Mobile */
         @media (max-width: 480px) {
             body {
@@ -313,6 +354,19 @@
                 width: 2px;
                 height: 2px;
             }
+
+            .info-box {
+                padding: 15px;
+                margin: 20px 0 15px;
+            }
+
+            .info-box h2 {
+                font-size: 14px;
+            }
+
+            .info-box p {
+                font-size: 13px;
+            }
         }
 
         /* Muito pequeno */
@@ -364,10 +418,18 @@
         <h1>Mudamos de <span>Site!</span></h1>
 
         <p>Nosso site está de cara nova em um <span class="highlight">novo endereço</span>.</p>
+
+        <div class="info-box">
+            <h2>Por que mudamos?</h2>
+            <p>Antes nos chamávamos <span class="old-name">Permutal</span>, mas percebemos que o nome gerava confusão, sendo associado a "permuta" ou troca de serviços.</p>
+            <p>Nossa proposta sempre foi maior: <strong>conectar empresas</strong> e oferecer soluções completas e abrangentes para o seu negócio.</p>
+            <p>Agora somos <span class="new-name">Plametal</span> — mesmo propósito, nova identidade!</p>
+        </div>
+
         <p>Você será redirecionado automaticamente.</p>
 
         <div class="countdown-container">
-            <div class="countdown" id="countdown">5</div>
+            <div class="countdown" id="countdown">10</div>
             <div class="countdown-label">segundos</div>
         </div>
 
@@ -383,7 +445,7 @@
     </div>
 
     <script>
-        let seconds = 5;
+        let seconds = 10;
         const countdownEl = document.getElementById('countdown');
 
         const interval = setInterval(() => {
